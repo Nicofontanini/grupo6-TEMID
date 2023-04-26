@@ -13,62 +13,99 @@
 body{
     background-color: #050505;
     color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
 }
 
-/* Estos son los estilos del header */
-header{
+/* responsivo */
+
+ 
+@media (max-width: 769px){
+    section .logo{
+        width: 50px;
+    }
+    .navegador a{
+        font-size: x-small;
+    }
+
+    .p-principal{
+       width: 98%;
+       padding: 1%;
+    }
+    .foto-hero{
+        width: 150%;
+    }
+
+    section div .integrantes-card{
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    }
+
+    .escuela-de-tecnicxs img{   
+        width: 80%;
+        margin: 40px;
+    }
+
+    form .container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        border: none;   
+    }
+
+    .container input{
+        width: 130%;
+    }
+
+    .container .textarea{
+        width: 130%;
+    }
+
+    .container .boton{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .contacto{
+        width: 50%;
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+    }
+    .copyright p{
+        font-size: x-small;
+        
+    }
 }
 
+
+/* Estos son los estilos del header */
 .seccion-navegador{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    gap: 350px;
-    margin: 15px;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
 }
 
 .logo{
-    width: 70px;
-    height: 50px;
+    width: 5%;
 }
-
+.hero{
+    display: flex;
+    justify-content: center;
+}
 .foto-hero{
-    height: 400px;
-    margin-left: 320px;
+    width: 50%;
     margin-top: 10px;
     border-radius: 10px;
     border-style:double;
 }
 
-.navegador{
-    display: flex;
-    flex-direction: row
-}
-
-
-.contenedor-imagenes{
-    display: flex;
-    justify-content: center;
-}
-.contenedor-imagenes img{
-    flex: 1;   
-}
-
-.foto1{
-    width: 45%;
-    height: 290px;
-    padding: 5px;
-}
-
-.foto2{
-    width: 45%;
-    height: 290px;
-    padding: 5px;
-}
 
 .p-principal{
     animation: animacion-colorida 4s infinite;
@@ -86,14 +123,14 @@ header{
     }
 }
 
-a{  padding: 10px;
+a{  padding: 8px;
     margin: 8px;
     background-color:white;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color:black;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 header section a:hover{
@@ -151,7 +188,6 @@ h2{
 
 .integrantes-card{
     color: white;
-    
     margin: 17px;
     display: flex;
     flex-direction: row;
@@ -232,7 +268,7 @@ h3{
 .container{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     border: none;   
 }
 
@@ -337,6 +373,10 @@ hr{
       color: #3064A9;
     }
   }
+
+  
+ 
+  
 /* Fin estilos hr */
 
 /* diseño responsivo */
